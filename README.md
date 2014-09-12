@@ -2,7 +2,7 @@
 
 基于psd.js
 
-因为对psd.js有修改，所以先进入 psd.js 文件夹执行 npm install
+因为对psd.js有修改，所以先进入 psd 文件夹执行 npm install
 
 ## Usage ##
 
