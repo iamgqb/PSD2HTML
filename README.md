@@ -2,6 +2,8 @@
 
 基于psd.js
 
+因为对psd.js有修改，所以先进入 psd.js 文件夹执行 npm install
+
 ## Usage ##
 
 #### psd.js 的基础使用 ####
