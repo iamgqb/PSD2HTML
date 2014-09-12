@@ -1,10 +1,10 @@
-#PSD2HTML
+#PSD2HTML#
 
 基于psd.js
 
-##Usage
+##Usage##
 
-####psd.js 的基础使用
+####psd.js 的基础使用####
 
 
 	var PSD = require('psd');
@@ -22,7 +22,7 @@
 	  console.log("Finished!");
 	});
 
-####结合psd2html 的lib
+####结合psd2html 的lib####
 
 	var PSD = require('psd');
 	var parseLayers = require('./lib/parseLayers');
