@@ -26,14 +26,14 @@ var root = {
 };
 var layers = tree.descendants();
 
-// var y =tree.psd.resources.get();
+var y =tree.psd.resources.get();
 var t=parseLayers(tree)
-// for (var i in t){
-//     if (t[i].type==='img'){
-//         t[i].image.saveAsPng('./image/'+i+'.png')
-//     }
-// }
-console.log(t[0]);
+for (var i in t){
+    if (t[i].type==='img'){
+        t[i].image.saveAsPng('./image/'+t[i].name+'.png')
+    }
+}
+console.log(t[2]);
 console.log('-------------------')
 // console.log(tree.psd.resources.resources['1026'].linkArray)
 
