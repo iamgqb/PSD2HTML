@@ -45,10 +45,19 @@
 	//text类型为文本图层
 	//wordsSnippets 为文本片段，当一个文本图层中出现不同样式的文本，则会产生两个或以上的文本片段
 	//注:ps的文字间距在默认情况下就会产生两个片段
-	
+	//增加了image，如若想将文本转为图片，则调用 image.saveAsPng(filename)
 	{
 		txt: '这里是文字，图层的纯文本信息',
-		wordsSnippets: [ [Object], [Object] ]
+		wordsSnippets: [ [Object], [Object] ],
+		image:{
+			obj: [Object],
+			file: [Object],
+			startPos: 1950912,
+			loaded: false,
+			loadMethod: 'parse',
+			loadArgs: [],
+			passthru: []
+		}
 	}	
 
 
