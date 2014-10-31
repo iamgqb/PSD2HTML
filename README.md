@@ -24,19 +24,21 @@
 	//对psd.js输出的tree对象进行进一步处理
 
 	console.log(result);
-	//最终输出为一个对象数组，会出现五种type
-	//text, img, groupStart, groupEnd, link;
+	//最终输出为一个对象数组，会出现四种type
+	//text, img, groupStart, groupEnd;
  
 ```
 ###### 以下是五种type的结构解释 ######
 ```javascript
 	
 	//每种类型都有基本的属性
-	//group类型没有 coords 属性
+	//groupStart, groupEnd类型暂时只是标记作用
 
 	{
 		type: 'text',
 		name: 'file test',
+		width: 100,
+		height: 100,
 		visible: true,
 		coords: { top: 0, bottom: 2293, left: 0, right: 1800 } 
 	}
@@ -67,20 +69,18 @@
 	//注：使用了混合模式的图层生产的png会丢失混合的效果
 
 	image:{
-		obj: [Object],
-		file: [Object],
-		startPos: 1950912,
-		loaded: false,
-		loadMethod: 'parse',
-		loadArgs: [],
-		passthru: []
+		saveAsPng: [function],
+		toPng: [function],
+		width: [function],
+		height: [function],
+		pixelData: [],
 	}
 
-	//link类型表示该图层有超链接行为
 	//url表示链接地址
-	//当img, text有超链接时, type会变为link
+	//当img, text有超链接时, 设置该图层 hasLink 属性为 true
 
 	{
+		hasLink: true,
 		url:'http://1688.com'
 	}
 
