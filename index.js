@@ -33,8 +33,8 @@ var t=parseLayers(tree)
 //         t[i].image.saveAsPng('./image/'+t[i].name+'.png')
 //     }
 // }
-t[1].image.saveAsPng('./image/text.png');
-console.log(t[1]);
+t[1].image.saveAsPng('./text.png');
+console.log(t[4].image);
 console.log('-------------------')
 // console.log(tree.psd.resources.resources['1026'].linkArray)
 
